@@ -1,0 +1,55 @@
+.actionbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 45px;
+
+    border-bottom: 1px solid #a6a6a8;
+    background-color: #f7f7f7;
+}
+
+.actionbar-primary { /** TODO **/ }
+
+.actionbar-nav {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.actionbar-nav li {
+    float: left;
+    padding: 10px 5px 10px 0;
+    z-index: 1;
+    font-size: 17px;
+}
+
+.actionbar-nav li a .glyphicon {
+    font-size: 15px;
+}
+
+.actionbar li.actionbar-right {
+    float: right;
+}
+
+.actionbar .actionbar-title {
+    display: inline-block;
+    font-weight: bold;
+    z-index: -1;
+
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
