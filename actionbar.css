@@ -6,11 +6,44 @@
 
     height: 45px;
 
-    border-bottom: 1px solid #a6a6a8;
+    border-bottom: 1px solid transparent;
     background-color: #f7f7f7;
 }
 
-.actionbar-primary { /** TODO **/ }
+.actionbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.actionbar-primary, .actionbar-primary a { 
+    color: white;
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
+.actionbar-success, .actionbar-success a {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.actionbar-info, .actionbar-info a {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.actionbar-warning, .actionbar-warning a {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+.actionbar-danger, .actionbar-danger a {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
 
 .actionbar-nav {
     position: relative;
