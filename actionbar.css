@@ -54,7 +54,6 @@
 
 .actionbar-nav li {
     float: left;
-    padding: 10px 5px 10px 0;
     z-index: 1;
     font-size: 17px;
 }
@@ -78,10 +77,14 @@
     left: 0;
     right: 0;
     text-align: center;
+    padding: 10px 5px 10px 0;
 }
 
+.actionbar-nav > li > a,
 .actionbar-nav > li > a:hover {
     text-decoration: none;
+    display: block;
+    padding: 10px 5px 10px 0;
 }
 
 .actionbar-nav > li > a:active {
