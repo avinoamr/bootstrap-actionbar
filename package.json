@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap-actionbar",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Mobile-like top Navigation Bar for Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avinoamr/bootstrap-actionbar.git"
+  },
+  "author": "Roi Avinoam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/avinoamr/bootstrap-actionbar/issues"
+  },
+  "homepage": "https://github.com/avinoamr/bootstrap-actionbar",
+  "devDependencies": {
+    "bower": "^1.3.9"
+  }
+}

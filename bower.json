@@ -1,0 +1,27 @@
+{
+  "name": "bootstrap-actionbar",
+  "version": "0.1.0",
+  "homepage": "https://github.com/avinoamr/bootstrap-actionbar",
+  "authors": [
+    "Roi Avinoam <avinoamr@gmail.com>"
+  ],
+  "description": "Mobile-like top Navigation Bar for Bootstrap",
+  "main": "actionbar.css",
+  "keywords": [
+    "bootstrap",
+    "mobile",
+    "actionbar",
+    "navigation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
