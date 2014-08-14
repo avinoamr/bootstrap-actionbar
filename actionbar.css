@@ -45,6 +45,10 @@
     border-color: #ebccd1;
 }
 
+.actionbar > .container {
+    padding: 0;
+}
+
 .actionbar-nav {
     position: relative;
     list-style: none;
@@ -62,10 +66,6 @@
     font-size: 15px;
 }
 
-.actionbar li.actionbar-right {
-    float: right;
-}
-
 .actionbar .actionbar-title {
     display: inline-block;
     font-weight: bold;
@@ -77,19 +77,23 @@
     left: 0;
     right: 0;
     text-align: center;
-    padding: 10px 5px 10px 0;
+    padding: 10px 0 10px 0;
 }
 
 .actionbar-nav > li > a,
 .actionbar-nav > li > a:hover {
     text-decoration: none;
     display: block;
-    padding: 10px 5px 10px 0;
+    padding: 10px 0 10px 15px;
 }
 
 .actionbar-nav > li > a:active {
     opacity: 0.3;
     text-decoration: none;
+}
+
+.actionbar-nav > li.pull-right > a {
+    padding: 10px 15px 10px 0;
 }
 
 

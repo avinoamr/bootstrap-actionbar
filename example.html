@@ -20,18 +20,14 @@
                     <li>
                         <a href="#">
                             <span class="glyphicon glyphicon-chevron-left"></span>
+                            Back
                         </a>
-                    </li>
-                    <li>
-                        <a href="#">Back</a>
                     </li>
                     <li class="actionbar-title">
                         Title
                     </li>
-                    <li class="actionbar-right">
-                        <a href="#">
-                            Done
-                        </a>
+                    <li class="pull-right">
+                        <a href="#">Done</a>
                     </li>
                 </ul>
             </div>
@@ -41,7 +37,7 @@
         <script type="text/javascript" src="bower_components/jquery.taps/jquery.taps.js"></script>
         <script type="text/javascript" src="actionbar.js"></script>
         <script>
-            $( ".actionbar" ).actionbar();
+            $( ".actionbar" ).actionbar(); // causes taps to flicker
         </script>
 
     </body>
