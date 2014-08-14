@@ -80,6 +80,15 @@
     text-align: center;
 }
 
+.actionbar-nav > li > a:hover {
+    text-decoration: none;
+}
+
+.actionbar-nav > li > a:active {
+    opacity: 0.3;
+    text-decoration: none;
+}
+
 
 
 
