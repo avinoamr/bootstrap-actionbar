@@ -15,34 +15,54 @@
     border-color: #e7e7e7;
 }
 
-.actionbar-primary, .actionbar-primary a { 
+.actionbar-primary { 
     color: white;
     background-color: #428bca;
     border-color: #428bca;
 }
 
-.actionbar-success, .actionbar-success a {
+.actionbar-primary a {
+    color: white;
+}
+
+.actionbar-success {
     color: #3c763d;
     background-color: #dff0d8;
     border-color: #d6e9c6;
 }
 
-.actionbar-info, .actionbar-info a {
+.actionbar-success a {
+    color: #3c763d;
+}
+
+.actionbar-info {
     color: #31708f;
     background-color: #d9edf7;
     border-color: #bce8f1;
 }
 
-.actionbar-warning, .actionbar-warning a {
+.actionbar-info a {
+    color: #31708f;
+}
+
+.actionbar-warning {
     color: #8a6d3b;
     background-color: #fcf8e3;
     border-color: #faebcc;
 }
 
-.actionbar-danger, .actionbar-danger a {
+.actionbar-warning a {
+    color: #8a6d3b;
+}
+
+.actionbar-danger {
     color: #a94442;
     background-color: #f2dede;
     border-color: #ebccd1;
+}
+
+.actionbar-danger a {
+    color: #a94442;
 }
 
 .actionbar > .container {
