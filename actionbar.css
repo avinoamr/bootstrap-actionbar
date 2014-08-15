@@ -78,24 +78,23 @@
     padding: 0;
 }
 
-.actionbar-nav,
-.actionbar-tabs {
+.actionbar-nav {
     position: relative;
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: right;
 }
 
 .actionbar-nav > li {
-    float: left;
-    z-index: 1;
+    display: inline-block;
     font-size: 17px;
 }
 
 .actionbar-nav .actionbar-title {
     display: inline-block;
     font-weight: bold;
-    z-index: -1;
+    z-index: -10;
 
     position: absolute;
     width: 100%;
@@ -107,9 +106,7 @@
 }
 
 .actionbar-nav > li > a,
-.actionbar-nav > li > a:hover,
-.actionbar-tabs > li > a,
-.actionbar-tabs > li > a:hover {
+.actionbar-nav > li > a:hover {
     text-decoration: none;
     display: block;
     padding: 10px 0 10px 15px;
@@ -120,25 +117,20 @@
     text-decoration: none;
 }
 
-.actionbar-nav > li.pull-right > a {
-    padding: 10px 15px 10px 0;
-}
-
 .actionbar-nav > li > a .glyphicon {
     font-size: 15px;
 }
-
 
 .actionbar-tabs {
     text-align: center;
 }
 
-.actionbar-tabs > li {
-    display: inline-block;
-}
-
 .actionbar-tabs > li > a {
     font-size: 10px;
+}
+
+.actionbar-tabs > li > a,
+.actionbar-tabs > li > a:hover {
     padding: 5px 0 5px 15px;
 }
 
@@ -146,10 +138,4 @@
     font-size: 25px;
     display: block;
 }
-
-
-
-
-
-
 
