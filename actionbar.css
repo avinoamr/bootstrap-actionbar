@@ -78,7 +78,8 @@
     padding: 0;
 }
 
-.actionbar-nav {
+.actionbar-nav,
+.actionbar-tabs {
     position: relative;
     list-style: none;
     padding: 0;
@@ -91,7 +92,7 @@
     font-size: 17px;
 }
 
-.actionbar .actionbar-title {
+.actionbar-nav .actionbar-title {
     display: inline-block;
     font-weight: bold;
     z-index: -1;
@@ -106,7 +107,9 @@
 }
 
 .actionbar-nav > li > a,
-.actionbar-nav > li > a:hover {
+.actionbar-nav > li > a:hover,
+.actionbar-tabs > li > a,
+.actionbar-tabs > li > a:hover {
     text-decoration: none;
     display: block;
     padding: 10px 0 10px 15px;
@@ -123,6 +126,25 @@
 
 .actionbar-nav > li > a .glyphicon {
     font-size: 15px;
+}
+
+
+.actionbar-tabs {
+    text-align: center;
+}
+
+.actionbar-tabs > li {
+    display: inline-block;
+}
+
+.actionbar-tabs > li > a {
+    font-size: 10px;
+    padding: 5px 0 5px 15px;
+}
+
+.actionbar-tabs > li > a .glyphicon {
+    font-size: 25px;
+    display: block;
 }
 
 
