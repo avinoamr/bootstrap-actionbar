@@ -1,12 +1,22 @@
 .actionbar {
+    height: 45px;
+    border-bottom: 1px solid transparent;
+}
+
+.actionbar-fixed-top {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+}
 
-    height: 45px;
-
-    border-bottom: 1px solid transparent;
+.actionbar-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: none;
+    border-top: 1px solid transparent;
 }
 
 .actionbar-default {
@@ -75,14 +85,10 @@
     margin: 0;
 }
 
-.actionbar-nav li {
+.actionbar-nav > li {
     float: left;
     z-index: 1;
     font-size: 17px;
-}
-
-.actionbar-nav li a .glyphicon {
-    font-size: 15px;
 }
 
 .actionbar .actionbar-title {
@@ -113,6 +119,10 @@
 
 .actionbar-nav > li.pull-right > a {
     padding: 10px 15px 10px 0;
+}
+
+.actionbar-nav > li > a .glyphicon {
+    font-size: 15px;
 }
 
 
