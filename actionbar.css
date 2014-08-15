@@ -24,13 +24,19 @@
     border-color: #e7e7e7;
 }
 
+.actionbar-default .actionbar-nav > li > a,
+.actionbar-default .actionbar-tabs > li.active > a {
+    color: #428bca;
+}
+
 .actionbar-primary { 
     color: white;
     background-color: #428bca;
     border-color: #428bca;
 }
 
-.actionbar-primary a {
+.actionbar-primary .actionbar-nav > li > a,
+.actionbar-primary .actionbar-tabs > li.active > a {
     color: white;
 }
 
@@ -40,7 +46,8 @@
     border-color: #d6e9c6;
 }
 
-.actionbar-success a {
+.actionbar-success .actionbar-nav > li > a,
+.actionbar-success .actionbar-tabs > li.active > a {
     color: #3c763d;
 }
 
@@ -50,7 +57,8 @@
     border-color: #bce8f1;
 }
 
-.actionbar-info a {
+.actionbar-info .actionbar-nav > li > a,
+.actionbar-info .actionbar-tabs > li.active > a {
     color: #31708f;
 }
 
@@ -60,7 +68,8 @@
     border-color: #faebcc;
 }
 
-.actionbar-warning a {
+.actionbar-warning .actionbar-nav > li > a,
+.actionbar-warning .actionbar-tabs > li.active > a {
     color: #8a6d3b;
 }
 
@@ -70,7 +79,8 @@
     border-color: #ebccd1;
 }
 
-.actionbar-danger a {
+.actionbar-danger .actionbar-nav > li > a,
+.actionbar-danger .actionbar-tabs > li.active > a {
     color: #a94442;
 }
 
@@ -129,9 +139,9 @@
     font-size: 10px;
 }
 
-.actionbar-tabs > li > a,
-.actionbar-tabs > li > a:hover {
+.actionbar-tabs.actionbar-nav > li > a {
     padding: 5px 0 5px 15px;
+    color: #666;
 }
 
 .actionbar-tabs > li > a .glyphicon {
