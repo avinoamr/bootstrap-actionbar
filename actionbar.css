@@ -140,12 +140,12 @@
 }
 
 .actionbar-tabs.actionbar-nav > li > a {
-    padding: 5px 0 5px 15px;
+    padding: 6px 0 6px 15px;
     color: #666;
 }
 
 .actionbar-tabs > li > a .glyphicon {
-    font-size: 25px;
+    font-size: 23px;
     display: block;
 }
 
