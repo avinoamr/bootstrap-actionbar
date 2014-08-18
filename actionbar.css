@@ -85,7 +85,7 @@
 }
 
 .actionbar > .container {
-    padding: 0;
+    padding: 0 5px 0 5px;
 }
 
 .actionbar-nav {
@@ -119,12 +119,12 @@
 .actionbar-nav > li > a:hover {
     text-decoration: none;
     display: block;
-    padding: 8px 10px 10px 10px;
+    padding: 8px 5px 10px 5px;
 }
 
 .actionbar-nav > li.pull-left > a,
 .actionbar-nav > li.pull-left > a:hover {
-    padding: 10px 10px 10px 10px;
+    padding: 10px 5px 10px 5px;
 }
 
 .actionbar-nav > li > a:active {
@@ -133,7 +133,8 @@
 }
 
 .actionbar-nav > li > a .glyphicon {
-    font-size: 15px;
+    font-size: 20px;
+    line-height: 15px;
 }
 
 .actionbar-tabs {
@@ -145,12 +146,13 @@
 }
 
 .actionbar-tabs.actionbar-nav > li > a {
-    padding: 6px 0 6px 15px;
+    padding: 10px 8px 6px 8px;
     color: #666;
 }
 
 .actionbar-tabs > li > a .glyphicon {
     font-size: 23px;
+    margin-bottom: 5px;
     display: block;
 }
 
