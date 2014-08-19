@@ -119,12 +119,12 @@
 .actionbar-nav > li > a:hover {
     text-decoration: none;
     display: block;
-    padding: 8px 5px 10px 5px;
+    padding: 8px 8px 10px 8px;
 }
 
 .actionbar-nav > li.pull-left > a,
 .actionbar-nav > li.pull-left > a:hover {
-    padding: 10px 5px 10px 5px;
+    padding: 10px 8px 10px 8px;
 }
 
 .actionbar-nav > li > a:active {
