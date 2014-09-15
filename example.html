@@ -17,22 +17,22 @@
         <nav class="actionbar actionbar-default actionbar-fixed-top">
             <div class="container">
                 <ul class="actionbar-nav">
-                    <li class="pull-left">
-                        <a href="#">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            Back
-                        </a>
-                    </li>
                     <li class="actionbar-title">
                         Title
                     </li>
-                    <li>
+                    <li class="pull-left">
+                        <a href="#cancel">
+                            <!-- <span class="glyphicon glyphicon-chevron-left"></span> -->
+                            Cancel
+                        </a>
+                    </li>
+                    <!-- <li>
                         <a href="#">
                             <span class="glyphicon glyphicon-plus"></span>
                         </a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a href="#">Done</a>
+                        <a href="#done">Done</a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +73,29 @@
         <script type="text/javascript" src="bower_components/jquery.taps/jquery.taps.js"></script>
         <script type="text/javascript" src="actionbar.js"></script>
         <script>
-            $( ".actionbar" ).actionbar(); // causes taps to flicker
+            var tapev = "ontouchstart" in document.documentElement 
+                ? "tap" : "click";
+
+            $( "[href='#done']" ).on( tapev, function ( ev ) {
+                ev.preventDefault();
+                var target = $( ".actionbar-fixed-top li.actionbar-title" );
+                $( "<li>" )
+                    .addClass( "actionbar-title" )
+                    .text( "Hello" )
+                    .replaceAll( target )
+            });
+
+            $( "[href='#cancel']" ).on( tapev, function ( ev ) {
+                ev.preventDefault();
+                var target = $( ".actionbar-fixed-top li.actionbar-title" );
+                $( "<li>" )
+                    .addClass( "actionbar-title" )
+                    .attr( "data-direction", "right" )
+                    .text( "Title" )
+                    .replaceAll( target )
+            })
+
+
         </script>
 
     </body>
