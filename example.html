@@ -20,12 +20,12 @@
                     <li class="actionbar-title">
                         Title
                     </li>
-                    <li class="pull-left">
+                    <!-- <li class="pull-left">
                         <a href="#cancel">
-                            <!-- <span class="glyphicon glyphicon-chevron-left"></span> -->
+                            <span class="glyphicon glyphicon-chevron-left"></span>
                             Cancel
                         </a>
-                    </li>
+                    </li> -->
                     <!-- <li>
                         <a href="#">
                             <span class="glyphicon glyphicon-plus"></span>
@@ -76,25 +76,38 @@
             var tapev = "ontouchstart" in document.documentElement 
                 ? "tap" : "click";
 
-            $( "[href='#done']" ).on( tapev, function ( ev ) {
+            var topbar = $( ".actionbar-fixed-top" )
+
+
+            .on( tapev, "[href='#done']", function ( ev ) {
                 ev.preventDefault();
-                var target = $( ".actionbar-fixed-top li.actionbar-title" );
+                var target = topbar.find( "li.actionbar-title" );
+
+                $( "<li>" )
+                    .addClass( "pull-left" )
+                    .append( "<a href='#cancel'>Close</a>" )
+                    .replaceAll( target.siblings() )
+
                 $( "<li>" )
                     .addClass( "actionbar-title" )
                     .text( "Hello" )
-                    .replaceAll( target )
-            });
+                    .replaceAll( target );
+            })
 
-            $( "[href='#cancel']" ).on( tapev, function ( ev ) {
+            .on( tapev, "[href='#cancel']", function ( ev ) {
                 ev.preventDefault();
-                var target = $( ".actionbar-fixed-top li.actionbar-title" );
+                var target = topbar.find( "li.actionbar-title" );
+
+                $( "<li>" )
+                    .append( "<a href='#done'>Done</a>" )
+                    .replaceAll( target.siblings() )
+
                 $( "<li>" )
                     .addClass( "actionbar-title" )
                     .attr( "data-direction", "right" )
                     .text( "Title" )
-                    .replaceAll( target )
-            })
-
+                    .replaceAll( target );
+            });
 
         </script>
 

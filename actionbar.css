@@ -99,6 +99,11 @@
 .actionbar-nav > li {
     display: inline-block;
     font-size: 17px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition:    all 0.2s ease;
+    -ms-transition:     all 0.2s ease;
+    -o-transition:      all 0.2s ease;
+    transition:         all 0.2s ease;
 }
 
 .actionbar-nav .actionbar-title {
@@ -113,12 +118,6 @@
     right: 0;
     text-align: center;
     padding: 10px 0 10px 0;
-
-    -webkit-transition: all 0.2s ease;
-    -moz-transition:    all 0.2s ease;
-    -ms-transition:     all 0.2s ease;
-    -o-transition:      all 0.2s ease;
-    transition:         all 0.2s ease;
 
     left: 0;
     opacity: 1;
