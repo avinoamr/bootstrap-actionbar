@@ -155,10 +155,14 @@
 }
 
 .actionbar-tabs {
-    text-align: center;
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-around;
 }
 
 .actionbar-tabs > li > a {
+    text-align: center;
     font-size: 10px;
 }
 
